@@ -17,6 +17,7 @@ export default async function Page() {
           </div>
           <span className="w-full text-center my-2">Need an account? <a href="/auth/signup" className="underline text-blue-800">Sign Up!</a></span>
           <div className="flex flex-col gap-2 my-4">
+            <h1 className="text-center">Sign In with</h1>
             <GoogleSignInButton />
             <DiscordSignInButton />
           </div>
@@ -24,4 +25,4 @@ export default async function Page() {
       </div>
     </div>
   )
-}
+} 

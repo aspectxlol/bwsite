@@ -13,7 +13,7 @@ export default async function Page() {
             <input type="text" placeholder="Email" className={`${styles.input}`} autoComplete="email" />
             <input type="password" placeholder="Password" className={`${styles.input}`} autoComplete="current-password" />
             <input type="password" placeholder="Confirm Password" className={`${styles.input}`} autoComplete="current-password" />
-            <button className="bg-primary text-white rounded-xl px-4 py-2 font-bold w-2/4 mt-2">Sign In</button>
+            <button className="bg-primary text-white rounded-xl px-4 py-2 font-bold w-2/4 mt-2">Sign Up</button>
           </div>
           <span className="w-full text-center my-2">Already have an account? <a href="/auth/signin" className="underline text-blue-800">Sign In!</a></span>
         </div>
