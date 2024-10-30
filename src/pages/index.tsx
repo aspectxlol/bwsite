@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:title" content="SemaBW" />
         <meta property="og:url" content="https://bwsite.vercel.app/" />
         <meta property="og:description" content="Unofficial SMA Strada BW Website" />
-        <meta property="og:image" content="/landing_page.jpg" />
+        <meta property="og:image" content="/Landing_Page.jpg" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
