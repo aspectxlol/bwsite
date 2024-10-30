@@ -20,6 +20,14 @@ export default function Home() {
         <meta property="og:description" content="Unofficial SMA Strada BW Website" />
         <meta property="og:image" content="/Landing_Page.jpg" />
 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@semabw" />
+        <meta name="twitter:title" content="SemaBW" />
+        <meta name="twitter:description" content="Unofficial SMA Strada BW Website" />
+        <meta name="twitter:image" content="/Landing_Page.jpg" />
+
+        <meta name="keywords" content="SMA, Strada, Bersama, SMA Strada, Bersama SMA, SMA Bersama, SMA Strada Bersama, Bersama SMA Strada, SMA Bersama Strada, Sma Strada Bersama, Sma Bersama Strada, Sma Strada Bersama, Sma Bersama Strada, Bhakti Wiyata, Wiyata Bhakti, Bhakti Wiyata, Wiyata Bhakti, Bhakti Wiyata, Wiyata Bhakti, Bhakti Wiyata, Wiyata Bhakti, Bhakti Wiyata, Wiyata Bhakti, Bhakti Wiyata, Wiyata Bhakti" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
