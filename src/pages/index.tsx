@@ -11,8 +11,17 @@ export default function Home() {
     <>
       <Head>
         <title>SemaBW</title>
-        <meta name="description" content="Unofficial SMA BW Website" />
+        <meta name="description" content="Unofficial SMA Strada BW Website" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://bwsite.vercel.app" />
+
+        <meta property="og:title" content="SemaBW" />
+        <meta property="og:url" content="https://bwsite.vercel.app/" />
+        <meta property="og:description" content="Unofficial SMA Strada BW Website" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+
       </Head>
       <Navbar />
       <main className="flex min-h-screen flex-col items-center justify-center bg-background">
