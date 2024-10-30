@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text: #0c0c0d;
+  --background: #eef3fc;
+  --primary: #557cc3;
+  --secondary: #8eafec;
+  --accent: #4383f9;
+}
+
 :root[data-theme="light"] {
   --text: #0c0c0d;
   --background: #eef3fc;
