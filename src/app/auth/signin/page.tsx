@@ -6,7 +6,7 @@ import DiscordSignInButton from "@bwsite/components/signin/Discord";
 export default async function Page() {
   return (
     <div>
-      <Image src={"/background.png"} alt="background" width={1920} height={1080} className="absolute -z-10 w-full h-full object-cover" />
+      <Image src={"/assets/background.png"} alt="background" width={1920} height={1080} className="absolute -z-10 w-full h-full object-cover" />
       <div className="md:bg-background md:w-1/2 h-dvh rounded-r-3xl flex flex-col justify-center items-center shadow-r-3xl">
         <div className="bg-background shadow-topdown-boxes rounded-3xl p-10 flex flex-col">
           <h1 className="font-extrabold text-5xl text-center">Sign In</h1>
