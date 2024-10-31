@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 // import Link from "next/link";
 import { useEffect } from "react";
 import Navbar from "~/components/Navbar";
@@ -32,9 +33,9 @@ export default function Home() {
         <meta charSet="UTF-8" />
       </Head>
       <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-center bg-background">
-        <div className="grid md:grid-cols-2 gap-4 h-full">
-          <div className="h-full justify-center items-center p-10">
+      <main className="flex min-h-screen flex-col items-center justify-center">
+        <div className="grid md:grid-cols-2 gap-4 h-full mt-8">
+          <div className="h-full justify-center items-center p-10 align-middle center flex flex-col">
             <h1 className="text-text font-bold text-5xl text-center">
               SMA Strada Bhakti Wiyata
             </h1>
@@ -50,10 +51,10 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div>
-            <h1 className="text-text font-bold text-5xl">
-
-            </h1>
+          <div className="hidden md:block">
+            <div className="justify-center items-center p-5 flex flex-col ">
+              <Image src="/Landing_Page.jpg" alt="Landing Page" width={1920} height={1080} className="rounded-lg border-b-2 border-gray-200 shadow-2xl max-w-lg" />
+            </div>
           </div>
         </div>
       </main>
