@@ -50,9 +50,6 @@ export default function Navbar() {
         ))}
       </div>
       <div>
-        {/* <button className="text-text font-bold text-2xl transition-all hidden md:block text-center justify-center" onClick={toggleTheme}>
-          {theme === 'light' ? 'Dark' : 'Light'}
-        </button> */}
         <div ref={dropdownRef}>
           <button>
             <Hamburger className="block md:hidden" onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
