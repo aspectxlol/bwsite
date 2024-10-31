@@ -50,9 +50,9 @@ export default function Navbar() {
         ))}
       </div>
       <div>
-        <button className="text-text font-bold text-2xl transition-all hidden md:block text-center justify-center" onClick={toggleTheme}>
+        {/* <button className="text-text font-bold text-2xl transition-all hidden md:block text-center justify-center" onClick={toggleTheme}>
           {theme === 'light' ? 'Dark' : 'Light'}
-        </button>
+        </button> */}
         <div ref={dropdownRef}>
           <button>
             <Hamburger className="block md:hidden" onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
@@ -60,7 +60,7 @@ export default function Navbar() {
           <div
             className={`absolute right-4 z-20 w-48 py-2 mt-2 origin-top-right bg-accent rounded-md shadow-2xl ${isDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-90'} transition-all ease-out duration-100`}
           >
-            <button className={`${NavCSS['dropdown-links']}`} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}> {theme === 'light' ? 'Dark' : 'Light'}</button>
+            <button className={`${NavCSS['dropdown-links']}`} onClick={() => toggleTheme()}> {theme === 'light' ? 'Dark' : 'Light'}</button>
             <hr className="border-gray-200 border-2" />
             {links.map((link) => (
               <Link key={link.name} href={link.href} className={`${NavCSS['dropdown-links']}`}>
