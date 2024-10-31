@@ -1,21 +1,15 @@
+
 import Link from "next/link";
 import NavCSS from './Navbar.module.css'
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import Hamburger from "./icons/Hamburger";
+import { ThemeContext } from "~/providers/ThemeProvider";
+import ThemeToggle from "./buttons/ThemeToggle";
 
 export default function Navbar() {
-  const [theme, setTheme] = useState('light');
+  const theme = useContext(ThemeContext);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  const toggleTheme
-    = () => { 
-      setTheme(theme === 'light' ? 'dark' : 'light');
-    };
 
   const links: { name: string; href: string }[] = [
     { name: 'About', href: '/about' }
@@ -50,14 +44,15 @@ export default function Navbar() {
         ))}
       </div>
       <div>
-        <div ref={dropdownRef}>
+        <ThemeToggle />
+        <div ref={dropdownRef} className="block md:hidden">
           <button>
-            <Hamburger className="block md:hidden" onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
+            <Hamburger className="" onClick={() => setIsDropdownOpen(!isDropdownOpen)} />
           </button>
           <div
             className={`absolute right-4 z-20 w-48 py-2 mt-2 origin-top-right bg-accent rounded-md shadow-2xl ${isDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-90'} transition-all ease-out duration-100`}
           >
-            <button className={`${NavCSS['dropdown-links']}`} onClick={() => toggleTheme()}> {theme === 'light' ? 'Dark' : 'Light'}</button>
+            <button className={`${NavCSS['dropdown-links']}`} onClick={() => theme.toggleTheme()}> {theme.theme === 'light' ? 'Dark' : 'Light'}</button>
             <hr className="border-gray-200 border-2" />
             {links.map((link) => (
               <Link key={link.name} href={link.href} className={`${NavCSS['dropdown-links']}`}>
