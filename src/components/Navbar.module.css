@@ -3,5 +3,5 @@
 }
 
 .dropdown-links {
-  @apply block px-4 py-3 text-sm capitalize transition-colors duration-300 transform font-bold text-start;
+  @apply block px-4 py-3 text-sm capitalize transition-colors duration-300 transform font-bold text-start w-full;
 }
