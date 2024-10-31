@@ -1,3 +1,7 @@
 .nav-links {
   @apply text-text font-bold text-2xl hover:text-gray-800 transition-all hover:-translate-y-2;
 }
+
+.dropdown-links {
+  @apply block px-4 py-3 text-sm capitalize transition-colors duration-300 transform font-bold text-start;
+}
