@@ -1,6 +1,7 @@
 import Link from "next/link";
 import NavCSS from './Navbar.module.css'
 import { useState, useEffect } from "react";
+import Hamburger from "./icons/Hamburger";
 
 export default function Navbar() {
   const [theme, setTheme] = useState('light');
@@ -21,7 +22,7 @@ export default function Navbar() {
           SemaBW
         </Link>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="items-center gap-4 hidden md:flex ">
         <Link href="/" className={`${NavCSS['nav-links']}`}>
           Home
         </Link>
@@ -33,8 +34,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div>
-        <button className="text-text font-bold text-2xl transition-all" onClick={toggleTheme}>
+        <button className="text-text font-bold text-2xl transition-all hidden md:block " onClick={toggleTheme}>
           {theme === 'light' ? 'Dark' : 'Light'}
+        </button>
+        <button>
+          <Hamburger className="block md:hidden" />
         </button>
       </div>
     </nav>
